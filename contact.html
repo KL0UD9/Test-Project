@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phsar24 - Contact</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <img src="images/phsar24-logo.png" alt="Phsar24 Logo" width="150">
+    <h1>Phsar24</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section>
+      <h2>Contact Us</h2>
+
+      <form id="contact-form" class="contact-form">
+        <label for="name">Your Name</label>
+        <input id="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn-primary">Send</button>
+
+        <p id="contact-status" class="contact-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Phsar24</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phsar24 - Products</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <img src="images/phsar24-logo.png" alt="Phsar24 Logo" width="150">
+    <h1>Phsar24</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+<!-- S15: simple cart display -->
+    <div id="cart-info">
+      Cart:
+      <span id="cart-count">0</span> items -
+      $<span id="cart-total">0.00</span>
+    </div>
+
+  </header>
+
+  <main class="page">
+    <section class="products-header">
+      <h2>Product List</h2>
+
+      <!-- simple controls you can extend in Week 5 -->
+      <div class="product-controls">
+        <input
+          id="search-box"
+          type="text"
+          placeholder="Search products..."
+        >
+
+        <select id="sort">
+          <option value="name">Sort by name (A–Z)</option>
+          <option value="price">Sort by price (low to high)</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- JS will render product cards into this container -->
+    <p id="product-count"></p>
+    <section id="product-list" class="product-grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Phsar24. Demo product page.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
